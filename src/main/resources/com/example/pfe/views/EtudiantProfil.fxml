@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="672.0" style="-fx-background-color: black;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.EtudiantProfilController">
+   <children>
+      <Button fx:id="closeButton" layoutX="644.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeButtonClicked" prefHeight="20.5" prefWidth="28.0" styleClass="xbutton" text="X">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="21.0" minHeight="0.0" minWidth="0.0" prefHeight="448.0" prefWidth="672.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="88.0" layoutX="55.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/diplome.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomprenometudiant" layoutX="141.0" layoutY="10.0" prefHeight="48.0" prefWidth="413.0" text="nom et prenom" textFill="#807878">
+               <font>
+                  <Font name="Cambria Bold" size="25.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="182.0" prefWidth="370.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="58.0" prefHeight="30.0" prefWidth="81.0" styleClass="titres" text="FILIERE:" textFill="#1e1e1e">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="98.0" styleClass="titres" text="EMAIL :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="filiere" layoutX="20.0" layoutY="78.0" prefHeight="17.0" prefWidth="259.0" text="GI" textFill="#807878">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" layoutX="20.0" layoutY="118.0" prefHeight="20.0" prefWidth="231.0" text="example@edu.ac.etu.ma" textFill="#807878">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="138.0" styleClass="titres" text="TELEPHONE :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="telephone" layoutX="20.0" layoutY="158.0" prefHeight="20.0" prefWidth="283.0" text="066666666" textFill="#807878">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cne" layoutX="20.0" layoutY="38.0" prefHeight="20.0" prefWidth="185.0" text="numero d'étudiant" textFill="#807878">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="18.0" styleClass="titres" text="CNE :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="323.0" layoutY="82.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="145.0" prefWidth="343.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="21.0" prefHeight="20.0" prefWidth="259.0" styleClass="titres" text="LIVRE EMPRUNTE POUR LE MOMENT :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TitreLivreEmpt" layoutX="20.0" layoutY="46.0" prefHeight="27.0" prefWidth="303.0" text="Ancun livre emprunté" textFill="#807878">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="confirmation" layoutX="103.0" layoutY="104.0" mnemonicParsing="false" onAction="#confirmerLivreRendu" style="-fx-background-color: #7DCE13; -fx-font-size: 13;" text="Confimer que Rendu" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="143.0" layoutY="239.0" prefHeight="30.0" prefWidth="303.0" styleClass="titres" text="Livres empruntés par l'étudiant : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="-1.0" layoutY="276.0" prefHeight="172.0" prefWidth="672.0">
+               <content>
+                  <TableView fx:id="listeLivres" prefHeight="162.0" prefWidth="662.0">
+                     <columns>
+                        <TableColumn fx:id="titreLivre" prefWidth="283.0" text="Titre" />
+                        <TableColumn fx:id="date_debut" prefWidth="187.0" text="Date d'emprunt" />
+                        <TableColumn fx:id="date_fin" prefWidth="191.0" text="Date de retourne" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

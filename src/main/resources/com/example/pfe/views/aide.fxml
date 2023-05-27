@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="700.8" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.ParamController">
+  <fx:include source="leftbarEtudiant.fxml" />
+  <Pane fx:id="root" layoutX="207.0" layoutY="43.0" prefHeight="659.0" prefWidth="1094.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+         <Label fx:id="label" layoutX="78.0" layoutY="37.0" prefHeight="66.0" prefWidth="207.0" styleClass="outline" text="aide">
+            <font>
+               <Font size="35.0" />
+            </font></Label>
+         <Text fill="WHITE" layoutX="40.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans notre application de réservation de livres de bibliothèque ! Nous sommes heureux de vous offrir un moyen simple et pratique de réserver les livres que vous souhaitez emprunter." wrappingWidth="993.3366088867188">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <Accordion layoutX="46.0" layoutY="281.0" prefHeight="182.0" prefWidth="962.0" styleClass="aide">
+            <panes>
+             <TitledPane animated="false" prefHeight="211.0" prefWidth="1010.0" style="-fx-background-color: transparent;" text="1.Comment puis-je réserver un livre que je souhaite emprunter ?">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1009.0" style="-fx-background-color: transparent;">
+                        <children>
+                           <Text layoutX="5.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notre application vous permet également de gérer vos réservations de livres en cours. Vous pouvez annuler une réservation si vous changez d'avis ou si vos plans changent, ou voir où vous en êtes dans la file d'attente si le livre que vous avez réservé n'est pas encore disponible. vous permet également de gérer vos réservations de livres en cours. Vous pouvez annuler une réservation si vous changez d'avis ou si vos plans changent, ou voir où vous en êtes dans la file d'attente si le livre que vous avez réservé n'est pas encore disponible." wrappingWidth="993.3366088867188">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </AnchorPane>
+               </content>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+             </TitledPane>
+             <TitledPane animated="false" prefHeight="211.0" prefWidth="1010.0" style="-fx-background-color: tranparent;" text="2.Comment puis-je rechercher des livres dans la collection de ma bibliothèque locale ?">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                        <children>
+                           <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notre application vous permet de parcourir la collection de livres de votre bibliothèque locale et de trouver ceux qui vous intéressent. Vous pouvez rechercher des livres par titre, auteur ou sujet, ou parcourir les listes de nouveautés et de best-sellers pour découvrir de nouveaux titres." wrappingWidth="976.5367126464844">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </AnchorPane>
+               </content>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+             </TitledPane>
+             <TitledPane animated="false" prefHeight="261.0" prefWidth="1006.0" style="-fx-background-color: transparent;" text="3.Comment fonctionne l'application de réservation de livres de bibliothèque ?">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="1004.0" style="-fx-background-color: transparent;">
+                        <children>
+                           <Text layoutX="31.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L'application de réservation de livres de bibliothèque vous permet de parcourir la collection de livres de votre bibliothèque locale, de trouver les livres qui vous intéressent et de les réserver en ligne. Vous pouvez rechercher des livres par titre, auteur ou sujet, ou parcourir les listes de nouveautés et de best-sellers pour découvrir de nouveaux titres.Une fois que vous avez trouvé un livre que vous souhaitez emprunter, vous pouvez vérifier sa disponibilité et choisir la date et l'heure de ramassage qui vous conviennent le mieux. Si le livre est déjà emprunté, vous pouvez être ajouté à une liste d'attente pour être averti lorsque le livre sera disponible.L'application vous permet également de gérer vos réservations de livres en cours. Vous pouvez annuler une réservation si vous changez d'avis ou si vos plans changent, ou voir où vous en êtes dans la file d'attente si le livre que vous avez réservé n'est pas encore disponible. En utilisant cette application, vous pouvez réserver des livres plus rapidement et plus facilement que jamais, tout en bénéficiant des avantages de votre bibliothèque locale." wrappingWidth="942.9366149902344">
+                              <font>
+                                 <Font size="17.0" />
+                              </font>
+                           </Text>
+                        </children>
+                     </AnchorPane>
+               </content>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+             </TitledPane>
+            </panes>
+         </Accordion>
+   </children>
+</Pane>
+
+</AnchorPane>

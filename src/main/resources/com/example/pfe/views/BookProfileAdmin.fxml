@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="706.0" prefHeight="706.0" prefWidth="1298.0" style="-fx-background-color:  #333231;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.BookProfileAdminController"> <!-- -->
+  <fx:include source="leftbar.fxml" />
+   <ScrollPane layoutX="210.0" layoutY="45.0" prefHeight="658.0" prefWidth="1091.0">
+      <content>
+         <AnchorPane prefHeight="526.0" prefWidth="1078.0" style="-fx-background-color: #73A398A;">
+            <children>
+               <ImageView fx:id="image" fitHeight="274.0" fitWidth="1083.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../background/eeee.jpg" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="couverture" fitHeight="268.0" fitWidth="197.0" layoutX="91.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" style="visibility: white;" />
+               <Label fx:id="title" alignment="TOP_LEFT" layoutX="320.0" layoutY="115.0" prefHeight="97.0" prefWidth="706.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box,rgba(0, 0, 0, 1), 5, 0, 0, 0);" text="TITLE " textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="40.0" />
+                  </font>
+               </Label>
+               <Label fx:id="nom_auteur" layoutX="750.0" layoutY="359.0" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: transparent;" text="nom_auteur">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="27.0" layoutY="361.0" prefHeight="14.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Description : ">
+                  <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                  </font>
+               </Label>
+               <Label fx:id="nb_pages" layoutX="750.0" layoutY="399.0" prefHeight="45.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="nb_pages">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="320.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../../../../../Users/soft/Downloads/reserve%20(2).png" />
+                  </image>
+               </ImageView>
+               <Text fx:id="description" fill="#4b4b4b" layoutX="27.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="desc" textAlignment="JUSTIFY" wrappingWidth="428.46673583984364" />
+               <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="975.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../../../../../../Downloads/send-message.png" />
+                  </image>
+               </ImageView>
+               <VBox fx:id="commentBox" layoutY="598.0" prefHeight="144.0" prefWidth="1038.0" />
+               <Pane layoutX="141.0" layoutY="367.0" prefHeight="200.0" prefWidth="0.0" />
+               <Label fx:id="exemplaire" layoutX="750.0" layoutY="457.0" text="exemplaire ">
+                  <font>
+                     <Font name="System Bold" size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="688.0" layoutY="372.0" text="Auteur :">
+                  <font>
+                     <Font name="System Italic" size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="666.0" layoutY="458.0" text="Exemplaire :">
+                  <font>
+                     <Font name="System Italic" size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="633.0" layoutY="413.0" text="Nombre de page :">
+                  <font>
+                     <Font name="System Italic" size="14.0" />
+                  </font>
+               </Label>
+               <Label fx:id="nb_comnt" layoutX="27.0" layoutY="574.0" text="Commentaire">
+                  <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                  </font>
+               </Label>
+            </children>
+         </AnchorPane>
+      </content>
+   </ScrollPane>
+   
+
+  
+  </AnchorPane>

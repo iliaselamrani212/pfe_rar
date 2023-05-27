@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="706.0" prefHeight="706.0" prefWidth="1298.0" style="-fx-background-color:  #333231;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.BookProfileController"> <!-- -->
+  <fx:include source="leftbarEtudiant.fxml" />
+   <ScrollPane layoutX="210.0" layoutY="45.0" prefHeight="658.0" prefWidth="1091.0">
+      <content>
+         <AnchorPane prefHeight="526.0" prefWidth="1078.0" style="-fx-background-color: #73A398A;">
+            <children>
+               <Button fx:id="BackIcon" layoutX="14.0" layoutY="7.0" mnemonicParsing="false" onAction="#BacktoPreviousScene" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: transparent;">
+                  <graphic>
+                     <ImageView fitHeight="34.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../../../../../../../../../New%20folder/Biblio_app/app/src/main/resources/com/example/icons/fleche-gauche.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+               <ImageView fx:id="image" fitHeight="274.0" fitWidth="1083.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../background/eeee.jpg" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="couverture" fitHeight="268.0" fitWidth="197.0" layoutX="91.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" style="visibility: white;" />
+               <Label fx:id="title" alignment="TOP_LEFT" layoutX="327.0" layoutY="116.0" prefHeight="97.0" prefWidth="706.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box,rgba(0, 0, 0, 1), 5, 0, 0, 0);" text="TITLE " textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="40.0" />
+                  </font>
+               </Label>
+               <Label fx:id="nom_auteur" layoutX="340.0" layoutY="171.0" prefHeight="42.0" prefWidth="190.0" style="-fx-background-color: transparent; -fx-effect: dropshadow(three-pass-box,rgba(0, 0, 0, 1), 5, 0, 0, 0);" text="nom_auteur" textFill="WHITE">
+                  <font>
+                     <Font name="Book Antiqua" size="14.0" />
+                  </font>
+               </Label>
+               <Label layoutX="27.0" layoutY="361.0" prefHeight="14.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Description : ">
+                  <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                  </font>
+               </Label>
+               <Button fx:id="reserver" layoutX="560.0" layoutY="288.0" mnemonicParsing="false" onAction="#reserver" prefHeight="42.0" prefWidth="162.0" style="-fx-background-color: #2B2B2B; -fx-background-radius: 40px; -fx-effect: dropshadow(three-pass-box,rgba(0, 0, 0, 0.84), 5, 0, 0, 0); -fx-cursor: HAND;" text="Réserver ce livre" textFill="#eaa65e">
+                  <font>
+                     <Font name="System Bold Italic" size="16.0" />
+                  </font>
+               </Button>
+               <Label fx:id="nb_pages" layoutX="299.0" layoutY="262.0" prefHeight="45.0" prefWidth="171.0" style="-fx-background-color: transparent;" text="nb_pages" textFill="#4b4b4b">
+                  <font>
+                     <Font name="System Bold Italic" size="11.0" />
+                  </font>
+               </Label>
+               <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="320.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../../../../../Users/soft/Downloads/reserve%20(2).png" />
+                  </image>
+               </ImageView>
+               <Text fx:id="description" fill="#4b4b4b" layoutX="27.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="desc" textAlignment="JUSTIFY" wrappingWidth="428.46673583984364" />
+               <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="975.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../../../../../../Downloads/send-message.png" />
+                  </image>
+               </ImageView>
+               <Button fx:id="add" layoutX="975.0" layoutY="380.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-background-radius: 18px;" textFill="#4a4848" />
+               <TextField fx:id="comnt" layoutX="27.0" layoutY="607.0" prefHeight="34.0" prefWidth="511.0" promptText="ajouter un commentaire" style="-fx-background-radius: 30;" />
+               <Button fx:id="reserver1" layoutX="535.0" layoutY="604.0" mnemonicParsing="false" onAction="#addcmnt" prefHeight="41.0" prefWidth="46.0" style="-fx-background-color: trensparent; -fx-background-radius: 5px; -fx-cursor: HAND;" textFill="#4a4848">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+                  <graphic>
+                     <ImageView fitHeight="37.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../icons/sendcommantaire.png" />
+                        </image>
+                     </ImageView>
+                  </graphic>
+               </Button>
+               <Pane layoutX="732.0" layoutY="291.0" prefHeight="36.0" prefWidth="38.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(three-pass-box,rgba(0, 0, 0, 0.84), 5, 0, 0, 0); -fx-background-radius: 17px;">
+                  <children>
+                     <ImageView fx:id="heartimageview1" fitHeight="24.0" fitWidth="38.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../icons/love.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="heartimageredview1" fitHeight="24.0" fitWidth="38.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../icons/lover.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+               </Pane>
+               <VBox fx:id="commentBox" layoutX="9.0" layoutY="661.0" prefHeight="144.0" prefWidth="1038.0" />
+               <Label layoutX="510.0" layoutY="357.0" text="Vous aimerez peut-être aussi :">
+                  <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                  </font>
+               </Label>
+               <HBox fx:id="youlike" layoutX="492.0" layoutY="375.0" prefHeight="183.0" prefWidth="541.0" />
+               <Pane layoutX="141.0" layoutY="367.0" prefHeight="200.0" prefWidth="0.0" />
+            </children>
+         </AnchorPane>
+      </content>
+   </ScrollPane>
+   
+
+  
+  </AnchorPane>

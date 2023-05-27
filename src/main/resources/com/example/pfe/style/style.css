@@ -1,0 +1,102 @@
+.buttonn {
+  -fx-background-color:transparent;
+  -fx-font-weight: bold;
+  -fx-text-fill: #ffffff;
+  -fx-cursor : "HAND";
+
+}
+
+.buttonn:hover {
+  -fx-border-width :1.5px ;
+  -fx-border-radius: 5 ;
+  -fx-border-color : #E38B29 ;
+ 
+}
+.logout_button {
+  -fx-background-color:transparent;
+  -fx-cursor : "HAND";
+}
+.besoin_aide {
+  -fx-cursor : "HAND";
+  -fx-font-weight: bold;
+  -fx-background-color:transparent;
+}
+.besoin_aide:hover {
+  -fx-text-fill:#E38B29;
+
+}
+.textfield{
+ 
+  -fx-background-color: #222222;
+  -fx-text-fill:#a3a09d;
+  -fx-font-weight: bold;
+ 
+  
+  
+ 
+}
+.textfield:focused {
+ 
+  -fx-background-color: #222222;
+ 
+  -fx-border-width :1.5px ;
+  -fx-border-radius: 5 ;
+  -fx-border-color : #E38B29 ;
+  
+  
+}
+.xbutton{
+  -fx-background-color:transparent;
+  -fx-text-fill: #8A8A8A ;
+}
+.xbutton:hover{
+  -fx-text-fill: #ffffff;
+  -fx-background-color:#e21e1e;
+}
+.connecter{
+  -fx-cursor : "HAND";
+  -fx-background-color:  #E38B29 ;
+}
+.eye_button{
+  -fx-cursor : "HAND";
+  -fx-background-color:transparent;
+}
+.etud_adm{
+  -fx-font-style :Italic;
+  -fx-cursor : "HAND";
+  -fx-background-color:transparent;
+  -fx-text-fill:#ffffff;
+  -fx-font-weight: bold;
+ 
+}
+.menu{
+  -fx-background-color: transparent;
+  
+
+}
+.menu:hover{
+  -fx-background-color: transparent;
+ 
+}
+.menu_title:hover{
+  -fx-cursor : "HAND";
+}
+.menu_bar{
+  -fx-pref-width: 200px;
+}
+ /* interface profiletudiant */
+.titres{
+  -fx-text-fill:#E38B29;
+  -fx-font-weight: bold;
+}
+.tablelivres{
+  -fx-background-color: #f0f0f0;
+  -fx-font-size: 14pt;
+}
+.tablelivre-header .column-header-background {
+  -fx-background-color: #1e1c1c;
+  -fx-text-fill: white;
+ 
+}
+
+

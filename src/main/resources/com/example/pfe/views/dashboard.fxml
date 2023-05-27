@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="700.8" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.DashboardController">
+  <fx:include source="leftbar.fxml" />
+  <Pane fx:id="root" layoutX="209.0" layoutY="44.0" prefHeight="659.0" prefWidth="1094.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+         <ImageView fitHeight="711.0" fitWidth="1140.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../background/84db801a9183c0b35c771c06378585b8.jpg" />
+            </image>
+         </ImageView>
+      <Pane fx:id="pane_1" layoutX="70.0" layoutY="112.0" prefHeight="118.0" prefWidth="217.0" stylesheets="@style.css">
+         <children>
+               <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="117.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../icons/graduated.png" />
+                  </image>
+               </ImageView>
+            <Label fx:id="nb_etu" layoutX="35.0" layoutY="27.0" text="510" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="75.0" text="Etudiants" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_1" />
+               <String fx:value="pane_all" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_11" layoutX="310.0" layoutY="112.0" prefHeight="118.0" prefWidth="217.0" stylesheets="@style.css">
+         <children>
+               <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="117.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../icons/copywriting.png" />
+                  </image>
+               </ImageView>
+            <Label fx:id="nb_auteur" layoutX="35.0" layoutY="27.0" text="235" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="75.0" text="Auteurs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_2" />
+               <String fx:value="pane_all" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_12" layoutX="555.0" layoutY="112.0" prefHeight="118.0" prefWidth="217.0" stylesheets="@style.css">
+         <children>
+               <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="123.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../icons/books1.png" />
+                  </image>
+               </ImageView>
+            <Label fx:id="nb_livre" layoutX="35.0" layoutY="27.0" text="100" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="75.0" text="Livres" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_3" />
+               <String fx:value="pane_all" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_111" layoutX="790.0" layoutY="112.0" prefHeight="118.0" prefWidth="217.0" stylesheets="@style.css">
+         <children>
+            <Label fx:id="nb_tag" layoutX="35.0" layoutY="27.0" text="510" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="75.0" text="Tags" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="72.0" layoutX="60.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../iamgess/icons8-target-50.png" />
+               </image>
+            </ImageView>
+               <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="116.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../icons/price-tag.png" />
+                  </image>
+               </ImageView>
+         </children>
+            <styleClass>
+               <String fx:value="pane_4" />
+               <String fx:value="pane_all" />
+            </styleClass>
+      </Pane>
+      <Label layoutX="74.0" layoutY="285.0" text="Mockup" textFill="#9a9292">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="315.0" text="Notifications" textFill="#9a9292">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane_13" layoutX="60.0" layoutY="310.0" prefHeight="78.0" prefWidth="307.0" stylesheets="@style.css">
+         <children>
+            <Label layoutX="78.0" layoutY="15.0" text="AIR PLANE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="40.0" text="Wajid HucYan" textFill="#9a9696">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_11" />
+               <String fx:value="pane_left" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_131" layoutX="60.0" layoutY="405.0" prefHeight="78.0" prefWidth="307.0" stylesheets="@style.css">
+         <children>
+            <Label layoutX="78.0" layoutY="15.0" text="TELPHONE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="40.0" text="Salaar HucYan" textFill="#9a9696">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_11" />
+               <String fx:value="pane_left" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_1311" layoutX="60.0" layoutY="500.0" prefHeight="78.0" prefWidth="307.0" stylesheets="@style.css">
+         <children>
+            <Label layoutX="78.0" layoutY="15.0" text="BUS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="40.0" text="john Edward" textFill="#9a9696">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_11" />
+               <String fx:value="pane_left" />
+            </styleClass>
+      </Pane>
+      <Pane fx:id="pane_132" layoutX="423.0" layoutY="340.0" prefHeight="262.0" prefWidth="596.0" stylesheets="@style.css">
+         <children>
+            <Label layoutX="32.0" layoutY="48.0" text="Ui Java Company  " textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="106.0" textFill="#323131">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="87.0" text="Lorem Ipsum has been the industry's standard " textFill="#9a9696">
+               <font>
+                  <Font name="System" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="109.0" text="dummy text ever since the 1500s," textFill="#9a9696">
+               <font>
+                  <Font name="System" size="15.0" />
+               </font>
+            </Label>
+         </children>
+            <styleClass>
+               <String fx:value="pane_11" />
+               <String fx:value="pane_right" />
+            </styleClass>
+      </Pane>
+         <Label fx:id="label" layoutX="81.0" layoutY="58.0" styleClass="outline" text="Tableau de bord" />
+   </children>
+</Pane>
+
+</AnchorPane>

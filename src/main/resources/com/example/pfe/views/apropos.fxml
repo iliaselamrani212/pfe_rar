@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="700.8" prefHeight="700.0" prefWidth="1300.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.ParamController">
+  <fx:include source="leftbarEtudiant.fxml" />
+  <Pane id="BackIcon" fx:id="root" layoutX="209.0" layoutY="44.0" prefHeight="659.0" prefWidth="1094.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+         <Label fx:id="label" layoutX="155.0" layoutY="14.0" prefHeight="88.0" prefWidth="207.0" styleClass="outline" text="à propos">
+            <font>
+               <Font size="35.0" />
+            </font></Label>
+         <Text fill="WHITE" layoutX="127.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans notre application de gestion de bibliothèque !Notre application est conçue pour vous aider à gérer votre bibliothèque de manière efficace et organisée. Vous pouvez facilement ajouter de nouveaux livres à votre collection, suivre les livres que vous avez empruntés et gérer les retours.Lorsque vous ajoutez un nouveau livre, vous pouvez saisir des informations telles que le titre, l'auteur, l'éditeur et le numéro ISBN. Vous pouvez également ajouter une description, une image de couverture et une catégorie pour le livre.Une fois que vous avez ajouté un livre à votre collection, vous pouvez facilement le trouver en utilisant notre fonction de recherche. Vous pouvez rechercher par titre, auteur, éditeur ou catégorie.Lorsque vous empruntez un livre, vous pouvez facilement enregistrer la date d'emprunt et la date de retour prévue. Vous pouvez également ajouter des notes pour vous rappeler pourquoi vous avez emprunté le livre ou pour vous souvenir de l'endroit où vous l'avez laissé.Nous espérons que notre application vous aidera à gérer votre bibliothèque de manière efficace et à trouver facilement les livres que vous cherchez. N'hésitez pas à nous contacter si vous avez des questions ou des commentaires sur notre application." wrappingWidth="857.6778106689453">
+            <font>
+               <Font size="23.0" />
+            </font>
+         </Text>
+         <Button  fx:id="BackIcon" layoutX="20.0" layoutY="14.0" onAction="#BacktoPreviousScene" mnemonicParsing="false" prefHeight="43.0" prefWidth="45.0" style="-fx-background-color: transparent;">
+            <graphic>
+               <ImageView fitHeight="51.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../icons/fleche-gauche.png" />
+                  </image>
+               </ImageView>
+            </graphic>
+         </Button>
+   </children>
+</Pane>
+
+</AnchorPane>

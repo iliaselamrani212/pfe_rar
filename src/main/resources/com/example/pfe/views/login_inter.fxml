@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.2" prefWidth="649.15" style="-fx-background-color: #292929;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfe.controllers.loginController">
+   <children>
+      <GridPane layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.2" prefWidth="649.2" AnchorPane.rightAnchor="1.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.8" minWidth="10.0" prefWidth="428.8000244140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0000122070313" minWidth="10.0" prefWidth="298.39997558593757" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fitHeight="404.0" fitWidth="391.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/bibliologo.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="411.0" prefWidth="260.0" GridPane.columnIndex="1">
+               <children>
+                  <AnchorPane prefHeight="400.0" prefWidth="138.0" style="-fx-background-color: #1B1A17;">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="176.0" layoutX="42.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/estmlogo.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="email" layoutX="31.0" layoutY="183.0" prefHeight="32.0" prefWidth="185.0" styleClass="textfield" />
+                        <Label layoutX="31.0" layoutY="160.0" text="Email :" textFill="#e38b29">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password_password_field" layoutX="30.0" layoutY="271.0" prefHeight="32.0" prefWidth="186.0" styleClass="textfield" />
+                        <Label layoutX="31.0" layoutY="247.0" text="Mot de passe :" textFill="#e38b29">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="seConnecter" layoutX="112.0" layoutY="346.0" mnemonicParsing="false" styleClass="connecter" text="Se connecter" onAction="#seconnecter" >
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="password_text_field" layoutX="31.0" layoutY="271.0" prefHeight="32.0" prefWidth="185.0" styleClass="textfield" />
+                        <Button fx:id="eye_button_passwordfield" layoutX="188.0" layoutY="274.0" mnemonicParsing="false" onAction="#eye_button" prefHeight="26.0" prefWidth="27.0" styleClass="eye_button">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/eye.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="1.0" top="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="etudiant" layoutY="108.0" mnemonicParsing="false" onAction="#switchtoetudiant" prefHeight="27.0" prefWidth="130.0" styleClass="etud_adm" text="Etudiant">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="-4.0" />
+                           </padding>
+                           
+                        </Button>
+                        <Button fx:id="admin" layoutX="130.0" layoutY="108.0" mnemonicParsing="false" onAction="#switchtoadmin" prefHeight="27.0" prefWidth="130.0" styleClass="etud_adm" text="Admin" AnchorPane.bottomAnchor="265.0" AnchorPane.topAnchor="108.0">
+                           <padding>
+                              <Insets top="-4.0" />
+                           </padding>
+                          
+                        </Button>
+                        <Label layoutX="31.0" layoutY="315.0" text="Email et/ou mot de passe incorrect !" textFill="#c41515" fx:id ="incorrect_mdps">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <Button fx:id="closeButton" layoutX="620.0" layoutY="2.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeButtonClicked" prefHeight="20.5" prefWidth="28.0" styleClass="xbutton" text="X">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
